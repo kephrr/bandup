@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Acceuil{% endblock %}
+
+{% block body %}
+    <main class="container mx-auto flex flex-col items-center">
+        <img class="h-36 w-auto" src="{{asset('images/logo_max.png')}}" alt="logo max">
+        <div class="w-1/2 my-4">
+            <h1 class="text-4xl font-semibold text-center">
+                Créer des groupes de travail avec 
+                vos contraintes et vos conditions, 
+                organiser votre travail et vos 
+                taches.
+            </h1>
+        </div>
+        <div class="flex w-1/2 my-4 justify-around">
+            <button class="bg-sky-700 py-2 px-10 rounded-lg font-bold text-white">Commencer</button>
+            <button class="bg-zinc-400 py-2 px-10 rounded-lg font-bold">Se connecter</button>
+        </div>
+    </main>
+{% endblock %}
